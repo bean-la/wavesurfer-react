@@ -31,7 +31,8 @@
     "test:ci": "pnpm test --ci --silent --coverage --json --watchAll=false --testLocationInResults --outputFile=report.json",
     "serve": "npx live-server --port=3030 --no-browser --ignore='.*,src,tests'",
     "prepare": "pnpm build",
-    "prepublishOnly": "pnpm build"
+    "prepublishOnly": "pnpm build",
+    "postinstall": "pnpm build"
   },
   "author": "katspaugh",
   "license": "BSD-3-Clause",
