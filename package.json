@@ -28,10 +28,10 @@
     "build:examples": "cd examples && rollup -c",
     "lint": "eslint src",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests",
-    "test:ci": "yarn test --ci --silent --coverage --json --watchAll=false --testLocationInResults --outputFile=report.json",
+    "test:ci": "pnpm test --ci --silent --coverage --json --watchAll=false --testLocationInResults --outputFile=report.json",
     "serve": "npx live-server --port=3030 --no-browser --ignore='.*,src,tests'",
-    "prepare": "yarn build",
-    "prepublishOnly": "yarn build"
+    "prepare": "pnpm build",
+    "prepublishOnly": "pnpm build"
   },
   "author": "katspaugh",
   "license": "BSD-3-Clause",
